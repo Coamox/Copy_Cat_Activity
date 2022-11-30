@@ -1,0 +1,85 @@
+body {
+  background: peachpuff;
+}
+
+.a {
+  grid-area: a;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.b {
+  grid-area: b;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.c {
+  grid-area: c;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.d {
+  grid-area: d;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.e {
+  grid-area: e;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.f {
+  grid-area: f;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.g {
+  grid-area: g;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.h {
+  grid-area: h;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+@media(max-width: 650px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-columns: auto;
+    grid-auto-rows: 18.5vh;
+    grid-template-areas:
+      "a a a"
+      "b c d"
+      "e f g"
+      "h h h"
+      "h h h";
+  }
+
+}
+
+@media(min-width: 651px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-columns: auto;
+    grid-auto-rows: 31.5vh;
+    grid-template-areas:
+      "a a a a"
+      "b c d h"
+      "e f g h";
+  }
+}
